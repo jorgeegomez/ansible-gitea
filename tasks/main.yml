@@ -44,6 +44,7 @@
     owner: "{{ gitea_user }}"
     group: "{{ gitea_group }}"
     mode: 0755
+    force: yes
 
 - name: generate the gitea envfile
   template:
