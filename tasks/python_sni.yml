@@ -19,6 +19,5 @@
 # get_url module in main.yml.
 - name: install the Python SNI python-pip dependencies.
   pip:
-    name: "{{ item }}"
+    name: "{{ python_sni_pip_dependencies }}"
     state: present
-  with_items: "{{ python_sni_pip_dependencies }}"
